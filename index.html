@@ -1,0 +1,145 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<style>    
+* 
+    
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */    
+</style>    
+</head>    
+<body> 
+<h2>FEED BACK FORM</h2>    
+<img src="asset/downloaewewd.jpg" alt="">  
+<div class="container">    
+  <form>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname">First Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="lname">Last Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+        <div class="col-25">    
+          <label for="email">Mail Id</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+        </div>    
+      </div> 
+      <div>
+        <form>  
+            <label> product Features  </label>  
+            <select>  
+            <option value = "BMW"> 1  
+            </option>  
+            <option value = "Mercedes"> 2   
+            </option>  
+            <option value = "Audi"> 3  
+            </option>  
+            <option value = "Skoda"> 4  
+            </option>  
+            <option value = "Skoda"> 5  
+            </option> 
+            </select>  
+            </form> 
+    </div>     
+    <div>
+        <form>  
+            <label> product Design  </label>  
+            <select>  
+            <option value = "BMW"> 1  
+            </option>  
+            <option value = "Mercedes"> 2   
+            </option>  
+            <option value = "Audi"> 3  
+            </option>  
+            <option value = "Skoda"> 4  
+            </option>  
+            <option value = "Skoda"> 5  
+            </option> 
+            </select>  
+            </form> 
+    </div>  
+    <div>
+        <form>  
+            <label> product Performance  </label>  
+            <select>  
+            <option value = "BMW"> 1  
+            </option>  
+            <option value = "Mercedes"> 2   
+            </option>  
+            <option value = "Audi"> 3  
+            </option>  
+            <option value = "Skoda"> 4  
+            </option>  
+            <option value = "Skoda"> 5  
+            </option> 
+            </select>  
+            </form> 
+    </div>  
+    <div>
+        <form>  
+            <label> OVERALL  PERFORMANCE  </label>  
+            <select>  
+            <option value = "BMW"> 1  
+            </option>  
+            <option value = "Mercedes"> 2   
+            </option>  
+            <option value = "Audi"> 3  
+            </option>  
+            <option value = "Skoda"> 4  
+            </option>  
+            <option value = "Skoda"> 5  
+            </option> 
+            </select>  
+            </form> 
+    </div>       
+    <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back">Feed Back</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+      </div>    
+    </div>  
+   
+      
+    <div class="row">       
+    </div>   
+    <div id="my_form">
+        <button id="nextStep">Submit feedback</button>
+      </div>
+      
+      <div id="thank_you" style="display: none;">
+        <p>Thanks for filling up the form!!!</p>
+        <button type="submit">Close</button>
+      </div>
+      
+      <script>
+        var nextStep = document.querySelector('#nextStep');
+      
+        nextStep.addEventListener('click', function (e) {
+          e.preventDefault();
+          // Hide first view
+          document.getElementById('my_form').style.display = 'none';
+      
+          // Show thank you message element
+          document.getElementById('thank_you').style.display = 'block';
+        });
+      </script> 
+  </form>   
+</div>    
+    
+</body>    
+</html>    
